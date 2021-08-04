@@ -1,0 +1,132 @@
+//importing
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'
+//variables
+c_gray = #b6b6b6
+c_white = #ffffff
+t_default = .6s all ease
+t_nav = .3s all ease
+
+//all
+*
+	margin 0
+	padding 0
+	font-family 'Poppins', sans-serif
+	
+//page
+
+body
+	scroll-behavior smooth
+
+.principal__info
+	max-width 100%
+	height 200px
+	min-height 50px
+	display flex
+	flex-direction colum
+	flex-wrap wrap
+	justify-content space-between
+	align-items center
+	background-color c_gray
+	padding 20px
+	position sticky
+	top 0
+	transition t_nav
+	z-index 1000
+	
+	h1
+		font-size 30px
+		text-align center
+		color c_white
+		margin 0 auto
+		
+	button
+		outline none
+		padding 5px
+		font-weight bold
+		font-size 20px
+		cursor pointer
+		border 2px solid c_white
+		background-color transparent
+		transition t_default
+		color c_white
+		
+	button:hover
+		background-color c_white
+		color c_gray
+
+// Second Section
+
+.generated__colors
+	max-width 100%
+	width 100%
+	height 75vh
+	display flex
+	flex-direction row
+	flex-wrap wrap
+	justify-content center
+	align-items center
+	transition t_default
+	
+	h1
+		font-size 30px
+		color c_gray
+		
+	div
+		width 25%
+		height 300px
+		padding 10px
+		color c_white
+		display flex
+		flex-direction column
+		flex-wrap wrap
+		justify-content center
+		align-items center
+		margin 10px
+		transition t_default
+		padding 0
+		overflow hidden
+	
+		&:hover button
+			opacity 1
+			top 25px	
+		
+		input
+			width 50%
+			height 15%
+			text-align center
+			color c_white
+			border 2px solid c_white
+			padding 5px
+			margin 10px auto
+			transition t_default
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content center
+			align-items center
+			background-color transparent
+			font-size 20px
+			font-weight bold
+			position relative
+			top 25px
+			outline none
+
+		button
+			text-align center
+			color c_white
+			border 2px solid transparent
+			padding 10px
+			margin 0 auto
+			transition t_default
+			background-color transparent
+			font-size 20px
+			font-weight bold
+			cursor pointer
+			position relative
+			top 35px
+			opacity 0
+			
+		button:hover
+			border 2px solid c_white
+			
+		
